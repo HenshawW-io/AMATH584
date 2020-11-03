@@ -1,4 +1,4 @@
-function [Q,R] = qrfactor(A)
+A = importdata('a.mat')
 
 [m,n] = size(A);
 Q=eye(m);
@@ -20,3 +20,8 @@ end
 
 Q = Q';
 R = triu(A);  % exact triangularity
+
+[q1, r1] = qr(A)
+----------------------------------------
+
+
